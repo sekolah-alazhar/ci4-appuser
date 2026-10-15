@@ -1,0 +1,27 @@
+# Core
+/.env
+/*.log
+/writable/
+/vendor/
+/node_modules/
+
+# Environment secrets
+.env*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.bak
+*.backup
+
+# Compiled / built assets (jika ada)
+/public/build/

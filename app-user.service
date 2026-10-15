@@ -1,0 +1,14 @@
+[Unit]
+Description=CI4 App User Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/upudin/ci4-appuser/ci4-appuser
+ExecStart=/usr/bin/php spark serve --host=127.0.0.1 --port=8080
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
